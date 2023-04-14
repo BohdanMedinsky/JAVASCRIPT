@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.tab {
+    float: left;
+    border: 0.5px solid blue;
+    width: 10vw;
+    height: 240px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    color: rgb(168, 17, 107);
+    padding: 20px 10px;
+    width: 100%;
+    height: 80px;
+    text-align: left;
+    transition: 0.1s;
+    font-size: 15px;
+}
+
+.tab button:hover {
+    background-color: rgb(25, 99, 173);
+}
+
+.tab button.active {
+    background-color: rgb(35, 110, 184);
+}
+
+.tabcontent {
+    float: left;
+    text-align: justify;
+    padding: 10px 12px;
+    border: 1px solid rgb(105, 105, 195);
+    width: 50vw;
+    margin-right: 25vw;
+    border-left: none;
+    height: 220px;
+    overflow-x: hidden;
+    background-color:rgb(24, 103, 163);
+}
+
+
+</style>
+
+</head>
+<body>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'HTML')" id="defaultOpen">HTML</button>
+        <button class="tablinks" onclick="openTab(event, 'CSS')">CSS</button>
+        <button class="tablinks" onclick="openTab(event, 'JS')">JS</button>
+    </div>
+      
+    <div id="HTML" class="tabcontent">
+        <h3>HTML</h3>
+        <p>
+            HTML стандартизована мова розмітки документів для перегляду веб-сторінок у браузері. Веб-браузери отримують HTML документ від сервера за протоколами HTTP/HTTPS або відкривають з локального диска, далі інтерпретують код в інтерфейс, який відображатиметься на екрані монітора
+           
+        </p>
+    </div>
+      
+    <div id="CSS" class="tabcontent">
+        <h3>CSS</h3>
+        <p>
+            CSS  це спеціальна мова стилю сторінок, що використовується для опису їхнього зовнішнього вигляду. Самі ж сторінки написані мовами розмітки даних.</p> 
+    </div>
+      
+    <div id="JS" class="tabcontent">
+        <h3>JS</h3>
+        <p>
+            JavaScript  динамічна, об'єктно-орієнтована прототипна мова програмування. Реалізація стандарту ECMAScript. Найчастіше використовується для створення сценаріїв вебсторінок, що надає можливість на боці клієнта (пристрої кінцевого користувача) взаємодіяти з користувачем, керувати браузером, асинхронно обмінюватися даними з сервером, змінювати структуру та зовнішній вигляд вебсторінки.<br>
+            
+        </p>
+    </div>
+
+    <script src="homework04.js"></script>
+</body>
+</html>

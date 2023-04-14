@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        
+                .wrapper form {
+        
+                    display: flex;
+                    width: 750px;
+        
+                }
+
+                .wrapper button{
+                    color: aqua;
+                }
+        
+                label {
+        
+                    display: block;
+        
+                }
+        
+                label span {
+        
+                    display: inline-block;
+        
+                    width: 170px;
+        
+                }
+        
+                label input {
+  
+                    display: inline-block;
+
+                    width: 170px;
+   }
+
+                textarea {
+  
+                    resize: none;
+   
+                }
+    
+                .first_book {
+   
+                    border: 1px solid black;
+   
+                    width: 23%;
+     
+                    height: 300px;
+      
+                }
+        
+                .second_book {
+        
+                    border: 1px solid black;
+        
+                    width: 23%;
+        
+                    height: 300px;
+        
+                }
+        
+                .third_book {
+        
+                    border: 1px solid black;
+        
+                    width: 23%;
+        
+                    height: 300px;
+        
+                }
+        
+                .shopping_window {
+        
+                    border: 1px solid black;
+        
+                    width: 31%;
+        
+                    height: 300px;
+        
+                }
+        
+                .invisible {
+        
+                    visibility: hidden;
+        
+                    opacity: 0;
+        
+                }
+
+               .book{
+                display: inline-block;
+               font-size: 1rem;
+               height: 25px;
+               background: #FFEFBA;
+               border: 1px solid transparent;
+               cursor: pointer;
+              
+               }
+
+            
+        
+            </style>
+        
+</head>
+<body>
+
+
+    <div class="wrapper">
+   
+                <form action="">
+      
+                    <div class="first_book">
+                    
+                        <img src="./icons/book.jpg" width="180" height="200" >
+       
+                        <h2>World Book Day </h2>          
+
+                 
+
+   
+                        <input type="button" value="Вибрати" class="book" data-name="Книга-1" />
+  
+                    </div>
+   
+                    <div class="second_book">
+
+                        <img src="./icons/books.jpg" width="180" height="200" >
+    
+                        <h2>World Book Day </h2>          
+                        
+  
+                        <input type="button" value="Вибрати" class="book" data-name="Книга-2" />
+  
+                    </div>
+    
+                    <div class="third_book">
+
+                        <img src="./icons/book.jpg" width="180" height="200" >
+  
+                        <h2>World Book Day </h2>  
+     
+                        <input type="button" value="Вибрати" class="book" data-name="Книга-3" />
+     
+                    </div>
+    
+                    <div class="shopping_window">
+     
+                        <label for="title">
+      
+                                <span>Книга:</span>
+  
+                                <input type="text" name="screen" id="result" disabled/>
+  
+                                </label>
+  
+                        <label for="quantity">
+    
+                                <span>Кількість :</span>
+     
+                            <input type="number" id="quantity" name="quantity">
+        
+                            </label>
+        
+                        <label for="nam">
+        
+                                <span>Імя:</span>
+        
+                                <input type="text" id="nam" name="nam" placeholder="Ваше Имя">
+        
+                            </label>
+        
+                        <label for="deliveryAddress">
+        
+                                <span>Адрес доставки:</span>
+        
+                                <input type="text" id="deliveryAddress" name="deliveryAddress">
+        
+                            </label>
+        
+                        <label for="deliveryDate">
+        
+                                <span>Дата доставки:</span>
+        
+                                <input type="date" id="deliveryDate" name="deliveryDate">
+        
+                            </label>
+        
+                        <label for="comment">
+        
+                                <span>Комментарий:</span>
+        
+                                <textarea name="comment" id="comment" cols="25" rows="3"></textarea>
+        
+                            </label>
+        
+                        <input type="submit" value="Відправити" id="send">
+          </div>
+   
+                </form>
+   
+            </div>
+     
+            <div id="field" class="invisible">
+      
+                <span id="buyerName"></span>
+        
+                <p>Дякуємо за замовлення</p>
+       
+                <span id="book"></span>
+     
+                <p> Доставка очікується :</p>
+
+                <span id="date"></span>
+
+                <p>За Адресою :</p>
+
+                <span id="buyerAddress"></span>
+
+            </div>
+        
+       <p> 1. Натисніть вибрати під книгою яка сподобалась</p>
+       <p> 2. Напишіть або за стрілочками вкажіть кількість книг</p>
+       <p> 3. Напишіть  Імя,Адресу доставки ,Вкажіть дату ,Та коментарій до замовлення та Натисніть Відправити.</p>
+    <script src="homework04 .js"></script>
+</body>
+</html>

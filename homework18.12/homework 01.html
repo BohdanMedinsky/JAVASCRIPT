@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>           
+     #container {
+        width: 400px;
+        height:320px;
+        padding:10px;
+        background-color: bisque;
+        border: 1px solid yellow;
+    }
+    .color-block {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+    }
+    .green {background-color: green;}
+    .red {background-color: red;}
+    .rebeccapurple {background-color: rebeccapurple;}
+    .royalblue {background-color: royalblue;}
+    .orange {background-color: orange;}
+    .olivedrab {background-color: olivedrab}
+    .darkmagenta {background-color: darkmagenta}
+    .darkkhaki {background-color: darkkhaki}
+</style>    
+</head>   
+ <body>       
+     <div id="container">            
+     <div id="colors">                
+     <p>                   
+   <div class="color-block green" data-color="green"></div>                    
+   <div class="color-block red" data-color="red"></div>                   
+   <div class="color-block rebeccapurple" data-color="rebeccapurple"></div>               
+ <div class="color-block royalblue" data-color="royalblue"></div>               
+   </p>               
+   <p>                  
+ <div class="color-block orange" data-color="orange"></div>                  
+<div class="color-block olivedrab" data-color="olivedrab"></div>                  
+<div class="color-block darkmagenta" data-color="darkmagenta"></div>                  
+ <div class="color-block darkkhaki" data-color="darkkhaki"></div>           
+ </p>            
+</div>            
+<p id="text">  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+ and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>       
+ </div>
+ <script>
+    const p = document.getElementById("text");
+    const color_blocks = document.querySelectorAll("div.color-block");
+    color_blocks.forEach(element =>{
+        element.addEventListener('click',event =>{
+            const current_block = event.target;
+            const color=current_block.dataset.color;
+            p.style.color= color;
+           
+        });
+    });
+ </script>
+    <script src="homework 01.js"></script>
+ 
+</body>
+</html>

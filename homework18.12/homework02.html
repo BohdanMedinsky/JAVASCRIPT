@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>            #container {
+        width: 800px;
+        height: 500px;
+        background-color: bisque;
+        padding: 20px;
+    }
+    .blocks {
+        padding: 10px;
+    }
+    .block {
+        display: inline-block;
+        width: 50px;
+        height: 20px;
+        margin-left: 5px;
+    }
+</style>    
+</head>   
+ <body>       
+ <div id="container">                      
+<div class="blocks">               
+</div>
+   <a href="#">Add block!</a>
+  </div>        
+ <script>           
+ const blocksConatiner = document.querySelector("div.blocks");
+    const link = document.querySelector("a");
+    link.addEventListener("click", function(event){
+        event.preventDefault();
+        let randColor = "background: rgb(";
+        randColor += Math.round(Math.random()*255) + `,`;
+        randColor += Math.round(Math.random()*255) + `,`;
+        randColor += Math.round(Math.random()*255) + `);`;
+        console.log(randColor);
+        const block = document.createElement("div");
+        block.className = "block";
+        block.setAttribute('style', randColor);
+        block.setAttribute('id', Math.floor(Math.random()*1000));
+        blocksConatiner.append(block);
+    });
+</script>
+
+    <script src="homework02.js"></script>
+</body>
+</html>

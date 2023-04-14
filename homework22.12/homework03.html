@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     #checkboxes, #radiobuttons {
+        display: inline-block;
+border-radius: 1px solid #000; 
+padding: 1px; 
+     }
+     #checkboxes{background-color: rgb(220, 177, 124);}
+     #radiobuttons {background-color: rgb(120, 120, 55);}
+     
+.bold { font-weight: bold;}
+.underline {text-decoration: underline;}
+.italics {font-style: italic;}
+.text-justify {text-align: center;}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+
+#result{
+
+    width: 33%;
+    padding: 10px;
+    border: 1px yellow solid;
+    background-color: bisque;
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+ 
+    <div id="checkboxes">
+
+  
+                    <label><input type="checkbox" id="font-weight"  name="font-weight">Bold</label> 
+                    <label><input type="checkbox"  id="text-decoration" name="text-decoration">Underline</label>        
+                    <label><input type="checkbox" id="font-style" name="font-style">italics</label>        
+                   
+                </div>
+
+                <div id="radiobuttons">
+
+                   <label><input type="radio"  id="text-align" name="text-align" value="left" checked >Left</label>       
+                    <label><input type="radio"  id="text-align"name="text-align" value="justify">justify</label>        
+                    <label><input type="radio"  id="text-align"name="text-align" value="right">Right</label>                              
+                
+
+                </div>
+                <br>
+
+            <textarea name="content" id="content" cols="49" rows="5" placeholder="put some  text theree " ></textarea>
+            <br>
+            <button>Show Text</button>
+            <br>
+            <div id="result">
+                <h4>Result</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+    </article>
+    <script src="homework03.js"></script>
+</body>
+</html>
